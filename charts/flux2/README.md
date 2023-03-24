@@ -130,6 +130,7 @@ This helm chart is maintain and released by the fluxcd-community on a best effor
 | notificationController.webhookReceiver.service.labels | object | `{}` |  |
 | policies.create | bool | `true` |  |
 | prometheus.podMonitor.create | bool | `false` | Enables podMonitor endpoint |
+| prometheus.podMonitor.additionalLabels | object | `{}` |  |
 | prometheus.podMonitor.podMetricsEndpoints[0].port | string | `"http-prom"` |  |
 | prometheus.podMonitor.podMetricsEndpoints[0].relabelings[0].action | string | `"keep"` |  |
 | prometheus.podMonitor.podMetricsEndpoints[0].relabelings[0].regex | string | `"Running"` |  |
