@@ -288,6 +288,7 @@ prometheus:
   podMonitor:
     # -- Enables podMonitor endpoint
     create: false
+    additionalLabels: {}
     podMetricsEndpoints:
       - port: http-prom
         relabelings:
